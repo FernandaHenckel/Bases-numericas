@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+  * {
+    /* padding=espaçamento dentro do elemento */
+    padding: 0;
+    /* margin=espaçamento fora do elemento */
+    margin: 0;
+    /* border box=trava do elemento mesmo usando padding ou margin */
+    box-sizing: border-box;
+  }
+  .container{
+    width: 100vw;
+    height: 100vh;
+    background-color: oklch(0.969 0.016 293.756);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .content{
+    width: fit-content;
+    height: fit-content;
+    padding: 10rem 3rem ;
+
+    background-color: oklch(0.828 0.111 230.318);
+    border-radius: 2.255rem;
+  }
+  .header{
+    margin-top: 0;
+    width: 100%;
+    height: 5rem;
+    background-color: oklch(0.828 0.111 230.318);
+  }
+  
+</style>
+
+
+<body>
+  <div class="header"></div>
+  <div class="container">
+    <div class="content">
+      <input type="number" id="ipt_decimal">
+    </div>
+  </div>
+</body>
+
+</html>
