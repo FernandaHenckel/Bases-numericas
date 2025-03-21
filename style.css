@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Resetando todos os valores padrões do css */
+* {
+  /* padding=espaçamento dentro do elemento */
+  padding: 0;
+  /* margin=espaçamento fora do elemento */
+  margin: 0;
+  /* border box=trava do elemento mesmo usando padding ou margin */
+  box-sizing: border-box;
+  /* Trocando a fonte da página */
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Estilização da nav bar */
+.navBar {
+  /* Deixando a nav na parte superior da tela */
+  margin-top: 0;
+  /* Fixando a nav bar na posição */
+  position: fixed;
+  /* Ajustando o tamanho horizontal da nav bar */
+  width: 100%;
+  /* Ajustando a altura da nav bar */
+  height: 3rem;
+  /* Alterando a cor de fundo da nav bar */
+  background-color: oklch(0.828 0.111 230.318);
+}
+
+/* Começando estilização de todos os elementos */
+.container {
+  /* Ajustando o tamanho horizontal do container */
+  width: 100%;
+  /* Ajustando a altura do container */
+  height: 100vh;
+  /* Alterando a cor de fundo da página */
+  background-color: oklch(0.969 0.016 293.756);
+  /* Flexibilizando os itens do container */
+  display: flex;
+  /* Centralizando os elementos na horizontal*/
+  justify-content: center;
+  /* Centralizando os elementos na vertical */
+  align-items: center;
+}
+
+/* Estilização dos elementos principais */
+.content {
+  /* Limitando o tamanho horizontal do conteúdo */
+  max-width: 30vw;
+  /* Ajustando o tamanho horizontal para acompanhar os elementos da página */
+  width: fit-content;
+  /* Ajustando o tamanho vertical para acompanhar os elementos da página */
+  height: fit-content;
+  /* Ajustando o tamanho do content */
+  padding: 10rem 3rem;
+  /* Alterando a cor de fundo do content */
+  background-color: oklch(0.828 0.111 230.318);
+  /* Arredondando os cantos do content */
+  border-radius: 2.255rem;
+}
+
+
+/* Começando a estilizar os botões */
+.botoes {
+  /* Flexibilizando os itens da div botoes */
+  display: flex;
+  /* Centralizando os elementos na horizontal */
+  justify-content: center;
+  /* Centralizando os elementos na vertical */
+  align-items: center;
+  /* Ajustando a direção para deixar os elementos em coluna */
+  flex-direction: column;
+}
+
+/* Estilizando o texto presente na h3 */
+.botoes h3 {
+  /* Adicionando cor ao título */
+  color: #333333;
+  /* Alterando o tamanho da fonte */
+  font-size: x-large;
+  /* Adicionando o tipo da fonte */
+  font-weight: 900;
+  /* Alinhando o texto no centro do content */
+  text-align: center;
+}
+
+/* Mudando a cor da seleção de texto */
+.botoes h3::selection {
+  /* Cor transparente */
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/* Estilizando a seção dos botões */
+.secBtn {
+  /* Flexibilizando os itens da section secBtn */
+  display: flex;
+  /* Centralizando os elementos na vertical */
+  justify-content: center;
+  /* Centralizando os elementos na vertical */
+  align-items: center;
+  /* Ajustando a distancia entre os botões */
+  gap: 1rem;
+  /* Ajustando o tamanho da section secBtn (1rem = 16px) */
+  padding: 1rem;
+  /* Ajusta a distancia da parte superior da section secBtn */
+  margin-top: 1rem;
+}
+
+/* Estilizando os botões que estão dentro da ul na section secBtn */
+.secBtn ul button {
+  /* Ajustando as bordas dos botões */
+  border: none;
+  /* Ajustando o tamanho dos botões */
+  padding: .5rem;
+  /* Arredonda as bordas dos botões */
+  border-radius: .5rem;
+  /* Mudando a cor de fundo dos botões */
+  background-color: oklch(0.951 0.026 236.824);
+  /* Adicionando um tempo para adcionar as mudanças */
+  transition: .5s;
+  /* Alterando o tamanho da letra dentro dos botões */
+  font-weight: 700;
+  /* Alterando a cor das letras do botão */
+  color: #333333;
+}
+
+/* hover = cursor acima do botão */
+.secBtn ul button:hover {
+  /* Alterando o tipo de cursor */
+  cursor: pointer;
+  /* Alterando a cor do fundo */
+  background-color: oklch(0.746 0.16 232.661);
+  /* Alterando a cor do texto */
+  color: oklch(0.951 0.026 236.824);
+  /* Trocando o tamanho da fonte */
+  font-size: medium;
+  /* Trocando o tipo de fonte do texto */
+  font-weight: bold;
+  /* Adicionando sombra ao botão */
+  box-shadow: 0px 5px 10px 2.5px oklch(0.588 0.158 241.966);
+  /* Adicionando um tempo para adcionar as mudanças */
+  transition: 0.5s;
+}
+
+/* Mudando a cor da seleção de texto */
+.secBtn ul button::selection {
+  /* Cor transparente */
+  background-color: rgba(0, 0, 0, 0);
+}
