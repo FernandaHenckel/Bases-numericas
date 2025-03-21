@@ -1,4 +1,4 @@
-var number = 0; // Inicializa number
+var number = 0;
 
 function btnDecimal() {
   div_alteravel.innerHTML = `
