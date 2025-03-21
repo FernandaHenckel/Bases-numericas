@@ -45,7 +45,7 @@
 /* Estilização dos elementos principais */
 .content {
   /* Limitando o tamanho horizontal do conteúdo */
-  max-width: 30vw;
+  max-width: 35vw;
   /* Ajustando o tamanho horizontal para acompanhar os elementos da página */
   width: fit-content;
   /* Ajustando o tamanho vertical para acompanhar os elementos da página */
