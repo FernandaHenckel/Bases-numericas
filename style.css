@@ -106,7 +106,7 @@
 }
 
 /* Estilizando os botões que estão dentro da ul na section secBtn */
-.secBtn ul button {
+.secBtn ul .nSelecionado {
   /* Ajustando as bordas dos botões */
   border: none;
   /* Ajustando o tamanho dos botões */
@@ -124,7 +124,7 @@
 }
 
 /* hover = cursor acima do botão */
-.secBtn ul button:hover {
+.secBtn ul .nSelecionado:hover {
   /* Alterando o tipo de cursor */
   cursor: pointer;
   /* Alterando a cor do fundo */
@@ -142,7 +142,168 @@
 }
 
 /* Mudando a cor da seleção de texto */
-.secBtn ul button::selection {
+.secBtn ul .nSelecionado::selection {
   /* Cor transparente */
   background-color: rgba(0, 0, 0, 0);
+}
+
+
+/* Alteração no botão selecionado */
+.secBtn ul .selecionado {
+  /* Ajustando as bordas dos botões */
+  border: none;
+  /* Ajustando o tamanho dos botões */
+  padding: .5rem;
+  /* Arredonda as bordas dos botões */
+  border-radius: .5rem;
+  /* Mudando a cor de fundo dos botões */
+  background-color: oklch(0.685 0.169 237.323);
+  /* Adicionando sombra ao botão */
+  box-shadow: 0px 5px 10px 2.5px oklch(0.588 0.158 241.966);
+  /* Adicionando um tempo para adcionar as mudanças */
+  transition: .5s;
+  /* Alterando o tamanho da letra dentro dos botões */
+  font-weight: 700;
+  /* Alterando a cor das letras do botão */
+  color: oklch(0.951 0.026 236.824);
+}
+
+/* Mudando a cor da seleção de texto */
+.secBtn ul .selecionado::selection {
+  /* Cor transparente */
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.secBtn ul .selecionado:hover {
+  /* Alterando o tipo de cursor */
+  cursor: pointer;
+  /* Alterando a cor do fundo */
+  background-color: oklch(0.746 0.16 232.661);
+  /* Alterando a cor do texto */
+  color: oklch(0.951 0.026 236.824);
+  /* Trocando o tamanho da fonte */
+  font-size: medium;
+  /* Trocando o tipo de fonte do texto */
+  font-weight: bold;
+  /* Adicionando sombra ao botão */
+  box-shadow: 0px 5px 10px 2.5px oklch(0.588 0.158 241.966);
+  /* Adicionando um tempo para adcionar as mudanças */
+  transition: 0.5s;
+}
+
+/* Travando atributos para quando houver um botão selecionado */
+.secBtn ul .selecao {
+  /* Ajustando as bordas dos botões */
+  border: none;
+  /* Ajustando o tamanho dos botões */
+  padding: .5rem;
+  /* Arredonda as bordas dos botões */
+  border-radius: .5rem;
+  /* Mudando a cor de fundo dos botões */
+  background-color: oklch(0.951 0.026 236.824);
+  /* Adicionando um tempo para adcionar as mudanças */
+  transition: .5s;
+  /* Alterando o tamanho da letra dentro dos botões */
+  font-weight: 700;
+  /* Alterando a cor das letras do botão */
+  color: #333333;
+}
+
+/* Começando estilização dos calculos */
+.calculo {
+  /* Flexibilizando os itens */
+  display: flex;
+  /* Direcionando os itens como coluna */
+  flex-direction: column;
+  /* Centralizando os itens na horizontal */
+  justify-content: center;
+  /* Centralizando os itens na vertical */
+  align-items: center;
+  /* Distanciando os itens uns dos outros */
+  gap: .5rem;
+  /* Distancia do elemento superior */
+  margin-top: .8rem;
+}
+
+/* Estilizando a section de seleção de numeros */
+.calculo .selecionar {
+  /* Flexibilizando os itens */
+  display: flex;
+  /* Direcionando os itens em fileira */
+  flex-direction: row;
+  /* Alterando tamanho da fonte */
+  font-size: large;
+  /* Alterando o tamanho da letra dentro dos botões */
+  font-weight: 700;
+  /* Alterando a cor das letras do botão */
+  color: #333333;
+  /* Alinhando o texto no centro do content */
+  text-align: center;
+  /* Distanciando os itens uns dos outros */
+  gap: .5rem;
+}
+
+/* Estilizndo a input */
+.calculo .selecionar input {
+  /* Ajustando as bordas dos botões */
+  border: none;
+  /* Ajustando o tamanho dos botões */
+  padding: .5rem;
+  /* Arredonda as bordas dos botões */
+  border-radius: .5rem;
+  /* Mudando a cor de fundo dos botões */
+  background-color: oklch(0.951 0.026 236.824);
+  /* Adicionando um tempo para adcionar as mudanças */
+  transition: .5s;
+  /* Alterando o tamanho da letra dentro dos botões */
+  font-weight: 700;
+  /* Alterando a cor das letras do botão */
+  color: #333333;
+}
+
+
+/* Estilizando a section resultados */
+.resultados {
+  /* Flexibilizando os itens */
+  display: flex;
+  /* Direcionando os itens em coluna */
+  flex-direction: column;
+  /* Centralizando os itens na horizontal */
+  justify-content: center;
+  /* Centralizando os itens na vertical */
+  align-items: center;
+  /* Distanciando os itens uns dos outros */
+  gap: .5rem;
+  /* Distanciando do elemento superior */
+  margin-top: 2rem;
+}
+
+.resultados p {
+  /* Alterando o tamanho da fonte */
+  font-size: large;
+  /* Alterando o tipo de fonte */
+  font-weight: 700;
+  /* Alterando a cor */
+  color: #333333;
+  /* Alinhando o texto no centro do content */
+  text-align: center;
+}
+
+.resultados p span {
+  /* Alterando o tamanho da fonte */
+  font-size: large;
+  /* Alterando o tipo de fonte */
+  font-weight: bold;
+  /*  */
+  font-style: italic;
+  /* Mudando a cor de fundo dos botões */
+  background-color: oklch(0.685 0.169 237.323);
+  /* Adicionando sombra ao botão */
+  box-shadow: 0px 5px 10px 2.5px oklch(0.588 0.158 241.966);
+  /* Alterando a cor do texto */
+  color: oklch(0.951 0.026 236.824);
+  /* Arredondando as bordas */
+  border-radius: .5rem;
+  /* Espaçamento dos lados */
+  padding-inline: .3rem;
 }

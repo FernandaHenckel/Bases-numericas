@@ -13,19 +13,18 @@
 <body>
   <div class="navBar"></div>
   <div class="container">
-    <div class="content">
 
+    <div class="content" id="div_alteravel">
       <!-- Div para a criação dos botões -->
       <div class="botoes">
         <h3>Selecione o tipo de base que você deseja calcular</h3>
         <section class="secBtn">
-            <ul><button onclick="btnBinario()">Binário</button></ul>
-            <ul><button onclick="btnDecimal()">Decimal</button></ul>
-            <ul><button onclick="btnOctal()">Octal</button></ul>
-            <ul><button onclick="btnHexadecimal()">Hexadecimal</button></ul>
+          <ul><button class="nSelecionado" onclick="btnBinario()">Binário</button></ul>
+          <ul><button class="nSelecionado" onclick="btnDecimal()">Decimal</button></ul>
+          <ul><button class="nSelecionado" onclick="btnOctal()">Octal</button></ul>
+          <ul><button class="nSelecionado" onclick="btnHexadecimal()">Hexadecimal</button></ul>
         </section>
       </div>
-
     </div>
   </div>
 </body>
